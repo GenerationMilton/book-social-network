@@ -6,7 +6,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
 @EnableJpaAuditing
-@EnableAsync
 public class BookNetworkApiApplication {
 
 	public static void main(String[] args) {
