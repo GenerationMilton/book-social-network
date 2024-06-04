@@ -30,13 +30,13 @@ public class JwtService {
     }
 
     //generate the token
-    private String generateToken(Map<String, Object> claims, UserDetails userDetails) {
+    public String generateToken(Map<String, Object> claims, UserDetails userDetails) {
 
         return buildToken(claims, userDetails, jwtExpiration);
     }
 
     //build token
-    private String buildToken(
+    public String buildToken(
             Map<String, Object> extraClaims,
             UserDetails userDetails,
             long jwtExpiration) {
